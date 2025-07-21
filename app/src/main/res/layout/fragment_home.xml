@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:padding="16dp">
+
+    <!-- Назва кімнати -->
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Room"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Температура -->
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Temp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoomName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Вологість -->
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Hum"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Газ -->
+    <TextView
+        android:id="@+id/tvGas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Gas"
+        app:layout_constraintTop_toBottomOf="@id/tvHumidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvPressure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Pressure"
+        app:layout_constraintTop_toBottomOf="@id/tvGas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvAltitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Altitude"
+        app:layout_constraintTop_toBottomOf="@id/tvPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Рекомендація -->
+    <TextView
+        android:id="@+id/tvRecommendation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Recomment"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tvAltitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
