@@ -36,13 +36,12 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        tvRoomName = root.findViewById(R.id.tvRoomName);
-        tvTemperature = root.findViewById(R.id.tvTemperature);
-        tvHumidity = root.findViewById(R.id.tvHumidity);
-        tvGas = root.findViewById(R.id.tvGas);
-        tvPressure = root.findViewById(R.id.tvPressure);
-        tvAltitude = root.findViewById(R.id.tvAltitude);
-        tvRecommendation = root.findViewById(R.id.tvRecommendation);
+        TextView textRoom = root.findViewById(R.id.textRoom);
+        TextView valueTemp = root.findViewById(R.id.valueTemp);
+        TextView valueHumidity = root.findViewById(R.id.valueHumidity);
+        TextView valuePressure = root.findViewById(R.id.valuePressure);
+        TextView valueAltitude = root.findViewById(R.id.valueAltitude);
+        TextView textReco = root.findViewById(R.id.textRecommendation);
 
         updateTask = new Runnable() {
             @Override

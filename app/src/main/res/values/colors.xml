@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tileBackground">#FFFFFF</color>
+    <color name="tileBorder">#DDDDDD</color>
+    <color name="textPrimary">#212121</color>
+    <color name="valueColor">#1976D2</color>
+    <color name="recoBackground">#FFF8E1</color>
+    <color name="recoText">#424242</color>
+    <color name="background">#D2DEC7</color>
+    <color name="card">#FFFFFF</color>
+    <color name="accent_primary">#FFB300</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="border">#E0DCD7</color>
 </resources>
